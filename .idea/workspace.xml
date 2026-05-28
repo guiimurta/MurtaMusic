@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ff7ee3c-654e-445e-bd60-57ad2815cf34" name="Changes" comment="feat: basic website completed">
+    <list default="true" id="3ff7ee3c-654e-445e-bd60-57ad2815cf34" name="Changes" comment="feat: website finished">
+      <change afterPath="$PROJECT_DIR$/img/siteSpotifyclone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779916938636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: website finished">
+      <option name="closed" value="true" />
+      <created>1779926687544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779926687544</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +114,7 @@
     <MESSAGE value="feat: add html file" />
     <MESSAGE value="feat: add script file and images" />
     <MESSAGE value="feat: basic website completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: basic website completed" />
+    <MESSAGE value="feat: website finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: website finished" />
   </component>
 </project>
