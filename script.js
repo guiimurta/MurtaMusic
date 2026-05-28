@@ -25,11 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
         artistCard.classList.add('artist-card');
 
         artistCard.innerHTML = `
-    <img src="${artist.image}" alt="${artist.name}">
-    <div>
-        <h3>${artist.name}</h3>
-    </div>
-    `;
+            <img src="${artist.image}" alt="${artist.name}">
+            <div>
+                <h3>${artist.name}</h3>
+                <p>Artista</p>
+                <button class="play-button">
+                <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        `;
         artistGrid.appendChild(artistCard);
     })
 
@@ -42,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div>
                 <h3>${album.name}</h3>
                 <p>${album.artist}</p>
+                <button class="play-button">
+                <i class="fa-solid fa-play"></i>
+                </button>
             </div>
         `;
 

@@ -17,10 +17,12 @@
 <div class="container">
     <nav class="sidebar">
         <div class="nav-logo">
-            <i class="fa-brands fa-spotify"></i>
+            <a href="#"><i class="fa-brands fa-spotify fa-2xl"></i></a>
         </div>
-        <div class="nav-library">
-            <p>Sua Biblioteca +</p>
+        <div class="nav-library" style="justify-content: space-between; padding: 10px 20px;">
+            <p>Sua Biblioteca</p>
+            <p style="background-color:#222; padding: 5px 15px; color: #fff; cursor: pointer; font-size: 14px; border-radius: 30px; ">
+                + Criar</p>
         </div>
         <div class="nav-playlist">
             <h5>Crie sua primeira playlist</h5>
@@ -46,18 +48,42 @@
         </button>
     </nav>
     <main>
-        <header class="search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input placeholder="O que você quer ouvir?">
-        </header>
-        <section class="content">
-            <h2>Artistas Populares</h2>
-            <div class="artists-grid"></div>
-
-            <h2>Álbuns Populares</h2>
-            <div class="albums-grid"></div>
+        <section class="nav">
+            <div class="nav-bar">
+                <header class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="O que você quer ouvir?">
+                </header>
+                <section class="nav-itens">
+                    <ul>
+                        <li>Premium</li>
+                        <li>Suporte</li>
+                        <li>Baixar</li>
+                        <li style="color: #fff; font-size: 24px; font-weight: lighter; cursor: default">|</li>
+                        <li>Inscrever-se</li>
+                        <li class="enter">Entrar</li>
+                    </ul>
+                </section>
+            </div>
         </section>
 
+        <section class="hero">
+            <section class="content">
+                <div class="content-header">
+                    <h2>Artistas Populares</h2>
+                    <p>Mostrar Tudo</p>
+                </div>
+                <div class="artists-grid"></div>
+
+
+                <div class="content-header">
+                    <h2>Álbuns Populares</h2>
+                    <p>Mostrar Tudo</p>
+                </div>
+                <div class="albums-grid"></div>
+
+            </section>
+        </section>
     </main>
 </div>
 </body>
