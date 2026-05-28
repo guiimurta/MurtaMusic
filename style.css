@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+
+}
+.hero {
+    background-color: #121212;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #121212;
+    padding: 16px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+
+
+.nav-logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-library {
+    display: flex;
+    align-items: center;
+}
+
+.nav-library p{
+    color: #B7B3B6;
+    font-size: 16px;
+    cursor: default;
+}
+
+.nav-playlist, .nav-podcast {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.nav-playlist p, .nav-podcast p {
+    font-size: 12px;
+}
+.nav-playlist button , .nav-podcast button {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav-playlist button:hover, .nav-podcast button:hover {
+    transform: scale(1.02);
+    background-color: #f1f1f1;
+}
+
+.nav-bar {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    align-items: baseline;
+}
+
+.nav-bar ul .enter {
+    background-color: #fff;
+    color: #000;
+    padding: 16px 32px;
+    border-radius: 32px;
+}
+
+
+.nav-bar ul .enter:hover {
+    color: #000;
+}
+.nav-bar ul li{
+    list-style: none;
+    color: #999;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-bar ul li:hover {
+    color: #f1f1f1;
+    transform: scale(1.1);
+}
+.nav-footer {
+    margin-top: auto;
+}
+
+.nav-footer a{
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.nav-language-button {
+    background: transparent;
+    border: 1px solid #888;
+    padding: 8px 12px;
+    margin-top: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.nav-language-button:hover {
+    border: 1px solid #fff;
+    transform: scale(1.02);
+    background-color: #fff;
+    color: #000;
+}
+
+main {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 32px;
+    width: 600px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    margin-left: 10px;
+}
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artist-card, .album-card {
+    background-color: #121212;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.artist-card:hover, .album-card:hover {
+    background-color: #282828;
+}
+
+.album-card img, .artist-card img {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.album-card h3, .artist-card h3 {
+    font-size: 16px;
+}
+.album-card p, .artist-card p {
+    font-size: 16px;
+    color: #888;
+}
+
+.artist-card, .album-card {
+    position: relative !important;
+}
+
+.artist-card div, .album-card div {
+    position: relative;
+    overflow: visible !important;
+}
+
+.artist-card .play-button,
+.album-card .play-button {
+    position: absolute;
+    top: -55px;
+    right: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    background-color: #1db954;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.artist-card:hover .play-button,
+.album-card:hover .play-button {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(-5px);
+}
+
+.play-button:hover {
+    background-color: #1ed760 !important;
+    transform: scale(1.05) translateY(-5px) !important;
+}
+
+.content {
+    margin-top: 32px;
+}
+
+.content-header {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.content-header p{
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content-header p:hover, .content-header h2:hover {
+    text-decoration: underline;
+}
